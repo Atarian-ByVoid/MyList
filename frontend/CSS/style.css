@@ -6,11 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+    
 }
 
 body{
-    background-image: url("/frontend/images/pexels-jaymantri-5049.jpg") ;
-   
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
 }
 
 main{
@@ -24,7 +28,8 @@ main{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    
+    background-color: rgba(255, 255, 255, 0.5); /* Define a cor de fundo com transparência */
+    backdrop-filter: blur(10px);    
 }
 
 .add-form{
@@ -77,8 +82,9 @@ table{
 
 td,th{
     padding: 10px 15px;
-    border: 1px solid #c4c4c4;
+    border: 2px solid #000000;
     text-align: center;
+    border-style: ridge; 
 }
 
 td{

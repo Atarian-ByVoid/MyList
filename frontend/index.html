@@ -1,58 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>To-Do List</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <title>Lista de Tarefas</title>
 </head>
 <body>
 
-    <main>
+  <main>
+  <script src="Js/changeBackround.js"></script>
+
     <form class="add-form">
-        <input type="text" id="input-task" placeholder="Add task" />
-        <button type="submit">+</button>
+      <input type="text" placeholder="Add task" class="input-task">
+      <button type="submit">+</button>
     </form>
+
     <table>
-        <thead>
-            <tr>
-                <th>Task</th>
-                <th>Created in</th>
-                <th>Status</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>task tittle </td>
-                <td>may 12 2023 14:34 </td>
-                <td>
-                    <select>
-                        <option value"pending">pending</option>
-                        <option value"in progress">in progress</option>
-                        <option value"finished">finished</option>
-                    </select>
-                </td>
-                <td>
-                    <button class="btn-action">
-                        <span class="material-symbols-outlined">
-                        edit
-                        </span></button>
-                    <button class="btn-action">
-                        <span class="material-symbols-outlined">
-                        delete
-                        </span></button>
-
-                </td>
-            </tr>
-        </tbody>
-
+      <thead>
+        <tr>
+          <th>Task</th>
+      <th>Created on</th>
+      <th>Status</th>
+      <th>Actions</th>
+        </tr>
+      </thead>
     </table>
-    </main>
+  </main>
 
+  <script src="Js/script.js"></script>
 
-    <script type="text/javascript" src="Js/script.js"></script>
 </body>
 </html>
